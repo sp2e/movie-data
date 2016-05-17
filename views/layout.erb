@@ -9,13 +9,25 @@
   <div id="all">
   <%= yield %>
   </div>
-  
+
+  <!--<div id="favoriteInfo"  onclick="getFavorites()">Show Favorites</div> 
+  <button type="button" value="Favorites" onclick="getFavorites()" style="position:relative;left:600px;top:-35px;">Favorites</button>
+  <div id="listFavorites" style="position:relative;left:600px;top:-300px;"></div>
+-->
+  <p></p>
+  <button type="button" onclick="getFavorites()">Favorites</button>
+
+  <div id="listFavorites"></div>
+
   <div id="movieInfo"></div>
+
 <!--
 the script src tag has to be below the "yield" for the XMLHTTP request to work, or else
 it wont see the form.
 -->
 <script src="javascript/getElemMy.js"></script>
+
+
 <!--
 dynamic script src:  chris says probably not ever needed or advantageous
 <script>
